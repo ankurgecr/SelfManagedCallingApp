@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">SelfManagedCallingApp</string>
+    <string name="title_activity_incoming_call">IncomingCallActivity</string>
+</resources>
