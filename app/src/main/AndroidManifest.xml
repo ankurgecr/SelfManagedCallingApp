@@ -15,10 +15,12 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".InCallActivity"></activity>
+        <activity android:name=".OutgoingCallActivity" />
         <activity
             android:name=".IncomingCallActivity"
             android:label="@string/title_activity_incoming_call"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

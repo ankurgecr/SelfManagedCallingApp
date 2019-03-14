@@ -15,8 +15,10 @@ public class MyConnection extends Connection {
 
     @Override
     public void onShowIncomingCallUi() {
+        System.out.println("-- onShowIncomingCallUi --");
         //super.onShowIncomingCallUi();
         Intent intent = new Intent(context, IncomingCallActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         context.startActivity(intent);
     }
 
@@ -25,5 +27,28 @@ public class MyConnection extends Connection {
         super.onCallAudioStateChanged(state);
     }
 
+    @Override
+    public void onAbort() {
+        super.onAbort();
+    }
 
+    @Override
+    public void onHold() {
+        super.onHold();
+    }
+
+    @Override
+    public void onUnhold() {
+        super.onUnhold();
+    }
+
+    @Override
+    public void onAnswer() {
+        super.onAnswer();
+    }
+
+    @Override
+    public void onReject() {
+        super.onReject();
+    }
 }

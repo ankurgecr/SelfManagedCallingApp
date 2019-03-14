@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".IncomingCallActivity"
+    tools:context=".OutgoingCallActivity"
     tools:showIn="@layout/activity_incoming_call">
 
     <LinearLayout
@@ -13,24 +13,17 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="16dp"
+        android:gravity="center"
         android:orientation="horizontal"
         android:padding="16dp">
 
         <Button
-            android:id="@+id/btn_reject"
+            android:id="@+id/btn_end"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.5"
             android:padding="8dp"
-            android:text="Reject" />
-
-        <Button
-            android:id="@+id/btn_accept"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.5"
-            android:padding="8dp"
-            android:text="Answer" />
+            android:text="End Call" />
 
     </LinearLayout>
 
